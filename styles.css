@@ -13,3 +13,19 @@
 .founder-tag{align-self:start;font-size:7px;letter-spacing:.13em;border:1px solid #dce3ec;padding:9px 11px;color:#778292;white-space:nowrap}
 @media(max-width:900px){.founder-section{margin-left:6%;margin-right:6%;grid-template-columns:200px 1fr;gap:22px}.founder-tag{grid-column:2;grid-row:1}}
 @media(max-width:680px){.founder-section{margin:0 22px 65px;padding:18px;grid-template-columns:1fr;gap:16px}.founder-photo{height:340px;max-width:100%}.founder-photo img{object-position:center 30%}.founder-tag{grid-column:auto;grid-row:auto;justify-self:start}.founder-bio h2{font-size:20px}.founder-bio p{font-size:10px}}
+
+/* Real device gallery */
+.product-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.product-tile{min-width:0;background:#fff;border:1px solid #e8edf3;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.product-tile:hover{transform:translateY(-3px);box-shadow:0 14px 32px #1e355014}
+.product-image{height:245px;background:#edf1f6;overflow:hidden}
+.product-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.product-tile:hover .product-image img{transform:scale(1.035)}
+.product-meta{display:flex;align-items:center;justify-content:space-between;padding:12px 13px}
+.product-meta small,.product-meta b{display:block}
+.product-meta small{font-size:7px;letter-spacing:.12em;color:#85909e;margin-bottom:5px}
+.product-meta b{font:700 11px var(--display);color:#111b2a}
+.product-meta>a{display:grid;place-items:center;width:28px;height:28px;background:#eef5ff;color:#216dda;border-radius:50%;font-size:13px}
+@media(max-width:900px){.product-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.product-image{height:230px}}
+@media(max-width:680px){.product-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-image{height:220px}.product-meta{padding:10px}.product-meta small{font-size:6px}.product-meta b{font-size:10px}}
+@media(max-width:380px){.product-image{height:180px}}
