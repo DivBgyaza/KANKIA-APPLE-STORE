@@ -45,3 +45,14 @@
 @media(max-width:900px){.phone-showcase{grid-template-columns:1fr .85fr}.phone-slideshow{height:415px}.phone-info{padding:27px}}
 @media(max-width:680px){.phone-showcase{grid-template-columns:1fr}.phone-slideshow{height:min(112vw,440px)}.phone-info{padding:23px}.phone-info h3{font-size:33px}.phone-info p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.phone-slideshow>img{transition:none}}
+
+/* Side-by-side phone and laptop showcases */
+.product-showcases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
+.phone-showcase{display:flex;flex-direction:column;max-width:none;margin:0;min-width:0}
+.phone-slideshow{height:365px}
+.phone-info{min-height:190px;padding:24px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:15px}
+.phone-info h3{font-size:31px;margin:13px 0 8px}
+.phone-info p{font-size:14px;line-height:1.7;margin:0;max-width:390px}
+.phone-info .button{font-size:12px}
+@media(max-width:900px){.product-showcases{gap:12px}.phone-slideshow{height:310px}.phone-info{padding:19px}.phone-info h3{font-size:28px}}
+@media(max-width:680px){.product-showcases{grid-template-columns:1fr;gap:18px}.phone-slideshow{height:min(105vw,430px)}.phone-info{min-height:unset;padding:21px}.phone-info h3{font-size:30px}.phone-info p{font-size:14px}}
