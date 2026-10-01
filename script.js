@@ -27,4 +27,4 @@ function initSlideshow(prefix,folder,filePrefix,total,label){
 }
 initSlideshow('phone','phones','device',20,'Phone');
 initSlideshow('laptop','laptops','laptop',3,'Laptop');
-initSlideshow('airpods','airpods','airpods',2,'AirPods');
+initSlideshow('airpods','airpods','airpods',3,'AirPods and iWatches');
